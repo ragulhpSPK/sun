@@ -4,7 +4,7 @@ export const Product = [
     name: "OnePlus 11R 5G",
     describe:
       "With the amazing 6000 mAh battery on the Infinix SMART 7 smartphone, get through your day and stay productive. Leveraging it, a single charge allows you to enjoy up to 10 movies or listen to over 1200 songs. Also, the Type-C charging capability allows you to quickly recharge your phone.",
-    img: "https://o.remove.bg/downloads/ec8debc0-1631-4059-8a96-525917f74f42/oneplus-11-5g-oneplus-11r-launched-in-removebg-preview.png",
+    img: "../assets/oneplus1.png",
   },
   {
     id: 2,

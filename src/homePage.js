@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Product } from "./helper/product";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { shuffle } from "lodash";
 import "./home.css";
 
 function HomePage() {
   const [triger, setTriger] = useState(false);
-  // const [stop, setStop] = useState(false);
+  // const [stop, setStop] = useState(true);
 
   setInterval(() => {
     setTriger(!triger);
@@ -51,6 +51,8 @@ function HomePage() {
                   className=" m-auto w-[35vw]  pr-20"
                   initial={{ opacity: 0, x: "100vw" }}
                   animate={{ opacity: 1, x: 0 }}
+                  onHoverStart={() => console.log("starts")}
+                  onHoverEnd={() => console.log("ends")}
                   transition={{
                     duration: 2,
                     type: "spring",

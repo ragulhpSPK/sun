@@ -1,19 +1,20 @@
 import React from "react";
+import "./styles/contact.css";
 
 function Contact() {
   return (
     <div id="contact" className="h-screen flex  justify-center items-center">
       <div
-        className="h-[90vh] w-[90vw]  flex flex-col justify-evenly relative bg-[#fff] shadow-2xl shadow-black/40 rounded-lg"
+        className="h-[90vh] w-[90vw]  flex flex-row justify-evenly   shadow-black/40 rounded-lg mt-10"
         data-aos="zoom-in"
         data-aos-easing="ease-in"
         data-aos-delay="300"
         data-aos-offset="0"
         data-aos-duration="1000"
       >
-        <div className="grid grid-cols-2 gap-44 items-center h-[50vh] absolute top-[12vh] left-0">
+        <div className="grid grid-cols-2 gap-64 items-center h-[50vh]">
           <div>
-            <div className="bg-[white] shadow-xl shadow-black/40 h-[18vh] w-[13vw] ml-10 text-justify">
+            <div className="bg-[white] shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10 text-justify">
               <h1 className="text-2xl pl-5 flex font-semibold text-[#99005e]">
                 Our Address
                 <svg
@@ -44,7 +45,7 @@ function Contact() {
             </div>
           </div>
           <div>
-            <div className="bg-[white] shadow-xl shadow-black/40 h-[18vh] w-[13vw] ml-10">
+            <div className="bg-[white] shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10">
               <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
                 Phone Number
                 <svg
@@ -66,7 +67,7 @@ function Contact() {
             </div>
           </div>
           <div>
-            <div className="bg-[white] shadow-xl shadow-black/40 h-[18vh] w-[13vw] ml-10">
+            <div className="bg-[white] shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10">
               <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
                 Website
                 <svg
@@ -88,7 +89,7 @@ function Contact() {
             </div>
           </div>
           <div>
-            <div className="bg-[white] z-50 shadow-xl shadow-black/40 h-[18vh] w-[13vw] ml-10">
+            <div className="bg-[white] z-50 shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10">
               <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
                 Email
                 <svg
@@ -110,45 +111,22 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div
-          className=" h-[70vh] shadow-black/40 m-auto w-[50vw] shadow-2xl ml-[34vw]"
-          id="form"
-        >
-          <form className="flex-flex-col h-[100%] pt-20 pr-10">
-            <div className="h-28 mr-32 pt-5">
-              <label className="text-2xl w-[50%] mr-10 h-[5vh] float-right text-[#99005e]">
-                Enter Your number*
-              </label>
-              <br />
-              <input
-                type="number"
-                placeholder="Enter Your Number"
-                className=" w-[50%] mr-10 h-[5vh] border-b-2 border-[black] float-right text-2xl"
-              />
-            </div>
-            <div className="pt-10 h-28 mr-32">
-              <label className="text-2xl w-[50%] mr-10 h-[5vh] float-right text-[#99005e]">
-                Enter Your Email*
-              </label>
-              <br />
-              <input
-                type="text"
-                placeholder="Enter Your Email"
-                className=" w-[50%] mr-10 h-[5vh] border-b-2 border-[black] float-right text-2xl"
-              />
-            </div>
-            <div className="pt-10 h-28 mr-32">
-              <label className="text-2xl w-[50%] mr-10 h-[5vh] float-right text-[#99005e]">
-                Enter Your Message*
-              </label>
-              <br />
-              <textarea
-                placeholder="enter your Message"
-                rows="4"
-                cols="50"
-                className=" w-[50%] mr-10 h-[20vh] border-2 border-[black] float-right text-2xl p-2"
-              />
-            </div>
+        <div className=" h-[70vh]  w-[50vw] ">
+          <form className="form">
+            <p className="heading text-4xl text-[#99005e]">Contact Us</p>
+            <input
+              className="input"
+              placeholder="Enter your Number"
+              type="Number"
+            />
+            <input class="input" placeholder="Enter your mail" type="email" />
+            <textarea
+              className="input h-40"
+              placeholder="Enter your Message"
+            ></textarea>
+            <button className="btn text-[#99005e] text-2xl -tracking-tight">
+              Submit
+            </button>
           </form>
         </div>
       </div>

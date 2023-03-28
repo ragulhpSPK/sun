@@ -1,63 +1,78 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Product } from "./helper/product";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { shuffle } from "lodash";
 import "./home.css";
 
 function HomePage() {
-  const [count, setcount] = React.useState(Product);
-  const [state1, setState] = useState(true);
-  const [state2, setStates] = useState(false);
+  const [triger, setTriger] = useState(false);
+  // const [stop, setStop] = useState(false);
 
-  //   useEffect(() => {
-  //     setcount(count + 1);
-  //   }, [count]);
-  //   setInterval(() => {
-  //     setState(!state1);
-  //     setStates(!state2);
-  //     let temp = count[0];
-  //     count.push(temp);
-  //     count.shift();
-  //   }, 3000);
-  console.log(count);
+  setInterval(() => {
+    setTriger(!triger);
+  }, 5000);
+
   return (
-    <div className="flex">
-      <div className="w-[50vw] flex flex-col justify-center items-center">
-        {count.slice(0, 1).map((data) => {
-          return (
-            <>
-              <AnimatePresence>
+    <div className="flex w-[100vw] h-[80vh] ">
+      <div className=" flex flex-row bg-[white] w-[90vw] h-[100%] m-auto shadow-2xl shadow-black/30">
+        {shuffle(Product)
+          .slice(0, 1)
+          .map((data) => {
+            return (
+              <div
+                className="flex flex-row w-[100vw] h-[70vh]  items-center pl-40"
+                key={data.id}
+              >
                 <motion.div
-                  className="w-[20vw] pt-32 pl-8 animate"
-                  initial={{ opacity: 0, y: -100 }}
+                  className=" pl-8 animate w-[50vw]"
+                  initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 2,
                     type: "spring",
                     repeat: Infinity,
-                    repeatDelay: 5,
+                    repeatDelay: 3,
                   }}
                   exit={{ opacity: 0 }}
                 >
-                  <div className="w-[35vw] text-5xl font-semibold p-5">
+                  <div className=" text-5xl font-semibold p-5 text-[#99005e]">
                     <p>{data.name}</p>
                   </div>
-                  <div className="w-[40vw] p-5 text-xl">{data.describe}</div>
-                  <div className="w-[40vw]">
-                    <button className="b-white shadow-lg  h-[6vh] w-[13vw]">
+                  <div className=" p-5 text-2xl w-[35vw] line leading-9">
+                    {data.describe}
+                  </div>
+                  <div>
+                    <button className="b-white shadow-lg  h-[5vh] w-[9vw] ml-5 text-2xl font-semibold text-[#99005e]">
                       Explore Now
                     </button>
                   </div>
                 </motion.div>
-              </AnimatePresence>
-            </>
-          );
-        })}
+                <motion.div
+                  className=" m-auto w-[35vw]  pr-20"
+                  initial={{ opacity: 0, x: "100vw" }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    duration: 2,
+                    type: "spring",
+                    repeat: Infinity,
+                    repeatDelay: 3,
+                  }}
+                  exit={{ opacity: 0, y: "-100vh" }}
+                >
+                  <div>
+                    <img src={data.img} alt="not found" className="h-[40vh]" />
+                  </div>
+                </motion.div>
+              </div>
+            );
+          })}
       </div>
-      <div>
-        {count.slice(0, 1).map((data) => {
-          return (
-            <>
-              <AnimatePresence>
+      {/* <div>
+        {shuffle(Product)
+          .slice(0, 1)
+          .map((data) => {
+            return (
+              <>
                 <motion.div
                   className="w-[50vw] m-auto pt-40"
                   initial={{ opacity: 0, y: "100vh" }}
@@ -74,11 +89,10 @@ function HomePage() {
                     <img src={data.img} alt="not found" />
                   </div>
                 </motion.div>
-              </AnimatePresence>
-            </>
-          );
-        })}
-      </div>
+              </>
+            );
+          })}
+      </div> */}
     </div>
   );
 }

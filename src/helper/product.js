@@ -14,14 +14,14 @@ export const Product = [
     img: "../assets/phone2.png",
   },
   {
-    id: 1,
+    id: 3,
     name: "Washing Machine",
     describe:
       "For all Fully Automatic Washing Machines with Digital Inverter Motors, sold on or after 1st Dec 2022 (All Fully Automatic Front Load Washing Machine and Top Load Washing Machine) the Warranty period on the Digital Inverter Motor shall be revised from 10 years to 20 years and Comprehensive Product Warranty shall be revised from 3 years to 2 years.",
-    img: "../assets/phone3.png",
+    img: "../assets/washing-machine.png",
   },
   {
-    id: 2,
+    id: 4,
     name: " Mixer Grinder",
     describe:
       "You can select an appropriate speed on the Bajaj REX 500 W Mixer-grinder that offers three levels of speed for grinding. So, if your ingredient needs slow grinding, you can pick the lowest speed and get the desired results.",

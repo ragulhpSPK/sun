@@ -18,7 +18,7 @@ export const Product = [
     name: "Washing Machine",
     describe:
       "For all Fully Automatic Washing Machines with Digital Inverter Motors, sold on or after 1st Dec 2022 (All Fully Automatic Front Load Washing Machine and Top Load Washing Machine) the Warranty period on the Digital Inverter Motor shall be revised from 10 years to 20 years and Comprehensive Product Warranty shall be revised from 3 years to 2 years.",
-    img: "../assets/washing-machine.png",
+    img: "../assets/washing.png",
   },
   {
     id: 4,

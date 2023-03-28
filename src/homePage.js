@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Product } from "./helper/product";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { shuffle } from "lodash";
 import "./home.css";
 
@@ -42,7 +42,7 @@ function HomePage() {
                     {data.describe}
                   </div>
                   <div>
-                    <button className="b-white shadow-lg  h-[5vh] w-[9vw] ml-5 text-2xl font-semibold text-[#99005e]">
+                    <button className="b-white shadow-xl  h-[5vh] w-[9vw] ml-5 text-2xl rounded-md font-semibold text-[#99005e] hover:scale-125 duration-1000 hover:rounded-full hover:pt-2 hover:pb-2">
                       Explore Now
                     </button>
                   </div>
@@ -69,32 +69,6 @@ function HomePage() {
             );
           })}
       </div>
-      {/* <div>
-        {shuffle(Product)
-          .slice(0, 1)
-          .map((data) => {
-            return (
-              <>
-                <motion.div
-                  className="w-[50vw] m-auto pt-40"
-                  initial={{ opacity: 0, y: "100vh" }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 2,
-                    type: "spring",
-                    repeat: Infinity,
-                    repeatDelay: 5,
-                  }}
-                  exit={{ opacity: 0, y: "-100vh" }}
-                >
-                  <div>
-                    <img src={data.img} alt="not found" />
-                  </div>
-                </motion.div>
-              </>
-            );
-          })}
-      </div> */}
     </div>
   );
 }

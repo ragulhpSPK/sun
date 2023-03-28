@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ open, setOpen }) => {
+const Navbar = () => {
   return (
     <div>
       <div className="flex items-center  justify-between h-[15vh]">
@@ -8,33 +8,38 @@ const Navbar = ({ open, setOpen }) => {
           {/* <img src="./svg/sunn.png" alt="logo" className="w-[90px] h-[auto]" /> */}
           <h1 className="text-3xl text-[#99005e] font-bold pl-28">Sun</h1>
         </div>
-        <div
-          className={`${
-            open && "invisible"
-          } flex items-center cursor-pointer justify-around gap-[5vw] pr-28`}
-        >
-          <a href="" className="text-2xl text-[#99005e]  font-bold">
+        <div className="flex items-center cursor-pointer justify-around gap-[5vw] pr-28">
+          <a
+            href="/#"
+            className="text-2xl text-[#99005e]  font-bold hover:scale-125 duration-1000 "
+          >
             Home
           </a>
-          <a href="#about" className="text-2xl text-[#99005e] font-bold">
+          <a
+            href="#about"
+            className="text-2xl text-[#99005e] font-bold hover:scale-125 duration-1000"
+          >
             About us
           </a>
-          <a href="" className="text-2xl text-[#99005e]  font-bold">
+          <a
+            href="/#"
+            className="text-2xl text-[#99005e]  font-bold hover:scale-125 duration-1000"
+          >
             Offers
           </a>
-          <a href="" className="text-2xl text-[#99005e]  font-bold">
+          <a
+            href="/#"
+            className="text-2xl text-[#99005e]  font-bold hover:scale-125 duration-1000"
+          >
             Products
           </a>
-          <a href="#contact" className="text-2xl text-[#99005e]  font-bold">
+          <a
+            href="#contact"
+            className="text-2xl text-[#99005e]  font-bold hover:scale-125 duration-1000"
+          >
             Contact
           </a>
         </div>
-        {/* <div
-          className={`${!open && "hidden"} cursor-pointer`}
-          onClick={() => setOpen([])}
-        >
-          back
-        </div> */}
       </div>
     </div>
   );

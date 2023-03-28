@@ -12,9 +12,9 @@ function Contact() {
         data-aos-offset="0"
         data-aos-duration="1000"
       >
-        <div className="grid grid-cols-2 gap-64 items-center h-[50vh]">
+        <div className="grid grid-cols-2 gap-56 items-center h-[50vh]">
           <div>
-            <div className="bg-[white] shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10 text-justify">
+            <div className="bg-[white] shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10 text-justify">
               <h1 className="text-2xl pl-5 flex font-semibold text-[#99005e]">
                 Our Address
                 <svg
@@ -45,7 +45,7 @@ function Contact() {
             </div>
           </div>
           <div>
-            <div className="bg-[white] shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10">
+            <div className="bg-[white] shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10">
               <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
                 Phone Number
                 <svg
@@ -67,7 +67,7 @@ function Contact() {
             </div>
           </div>
           <div>
-            <div className="bg-[white] shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10">
+            <div className="bg-[white] shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10">
               <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
                 Website
                 <svg
@@ -89,7 +89,7 @@ function Contact() {
             </div>
           </div>
           <div>
-            <div className="bg-[white] z-50 shadow-xl shadow-black/40 h-[20vh] w-[17vw] ml-10">
+            <div className="bg-[white] z-50 shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10">
               <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
                 Email
                 <svg

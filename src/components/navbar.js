@@ -6,7 +6,9 @@ const Navbar = () => {
       <div className="flex items-center  justify-between h-[15vh]">
         <div>
           {/* <img src="./svg/sunn.png" alt="logo" className="w-[90px] h-[auto]" /> */}
-          <h1 className="text-3xl text-[#99005e] font-bold pl-28">Sun</h1>
+          <h1 className="text-3xl text-[#99005e] font-bold lg:pl-28 xxl:text-[red] xxl:text-5xl">
+            <img src="../assets/sunn.png" className="w-20" />
+          </h1>
         </div>
         <div className="flex items-center cursor-pointer justify-around gap-[5vw] pr-28">
           <a

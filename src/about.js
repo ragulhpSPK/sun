@@ -56,7 +56,7 @@ function About() {
         >
           <img
             // src="https://cdn.dribbble.com/users/1602563/screenshots/8869646/media/ddc33ce2c8e2570c410123f375e2c35c.gif"
-            // src="https://i.pinimg.com/originals/50/78/a0/5078a05eb1b6847d93383eaa4c0ed500.gif"
+            src="https://i.pinimg.com/originals/50/78/a0/5078a05eb1b6847d93383eaa4c0ed500.gif"
             // src="https://i.pinimg.com/originals/8d/b8/e6/8db8e6f39203f657ee8efad634cacad1.gif"
             // src="https://i.pinimg.com/originals/a2/9d/a9/a29da9f5445172a22699934407c008ad.gif"
             // src="https://i.pinimg.com/originals/f0/f5/cd/f0f5cd7a0626dffffea966b2528868e2.gif"

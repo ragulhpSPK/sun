@@ -15,7 +15,7 @@ function Contact() {
         <div className="grid grid-cols-2 gap-56 items-center h-[50vh]">
           <div>
             <div className="bg-[white] shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10 text-justify">
-              <h1 className="text-2xl pl-5 flex font-semibold text-[#99005e]">
+              <h1 className="text-2xl pl-5 flex font-semibold text-[#82237c]">
                 Our Address
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ function Contact() {
           </div>
           <div>
             <div className="bg-[white] shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10">
-              <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
+              <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#82237c]">
                 Phone Number
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ function Contact() {
           </div>
           <div>
             <div className="bg-[white] shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10">
-              <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
+              <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#82237c]">
                 Website
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ function Contact() {
           </div>
           <div>
             <div className="bg-[white] z-50 shadow-xl shadow-black/40 h-[22vh] w-[17vw] ml-10">
-              <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#99005e]">
+              <h1 className="text-2xl pl-5 flex pt-5 font-semibold text-[#82237c]">
                 Email
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ function Contact() {
         </div>
         <div className=" h-[70vh]  w-[50vw] ">
           <form className="form">
-            <p className="heading text-4xl text-[#99005e]">Contact Us</p>
+            <p className="heading text-4xl text-[#82237c]">Contact Us</p>
             <input
               className="input"
               placeholder="Enter your Number"
@@ -124,7 +124,7 @@ function Contact() {
               className="input h-40"
               placeholder="Enter your Message"
             ></textarea>
-            <button className="btn text-[#99005e] text-2xl -tracking-tight">
+            <button className="btn text-[#82237c] text-2xl -tracking-tight">
               Submit
             </button>
           </form>

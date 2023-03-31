@@ -42,7 +42,7 @@ function HomePage() {
                     {data.describe}
                   </div>
                   <div>
-                    <button className="b-white shadow-xl shadow-black/30  h-[5vh] w-[9vw] ml-5 text-2xl rounded-md font-semibold text-[#fff] bg-[#82237c] tracking-widest hover:scale-110 duration-1000 hover:rounded-full  hover:pt-1 hover:pb-2">
+                    <button className="b-white shadow-xl shadow-black/30  h-[5vh] w-[9vw] ml-5 text-2xl rounded-md font-semibold text-[#fff] bg-[#82237c] tracking-widest hover:scale-105 duration-1000  hover:pt-1 hover:pb-2">
                       Explore Now
                     </button>
                   </div>
